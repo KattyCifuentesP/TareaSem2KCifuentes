@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaSem2KCifuentes.MainPage">
+
+    <ScrollView>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Sistema de Calificación" 
+                 HorizontalTextAlignment="Center" 
+                       TextColor="White" FontSize="24"/>
+            </Frame>
+
+            <Entry x:Name="txtUsuario"
+                   Placeholder="Ingrese su usuario"/>
+
+            <Entry x:Name="txtPassword"
+                   Placeholder="Ingrese su contraseña"
+                   IsPassword="True"/>
+
+            <Button x:Name="btnIngresar"
+                    Text="Ingresar"
+                    Clicked="btnIngresar_Clicked"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

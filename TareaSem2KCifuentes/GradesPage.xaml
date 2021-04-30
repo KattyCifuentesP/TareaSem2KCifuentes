@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaSem2KCifuentes.GradesPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                    <Label Text="Sistema de Calificación" 
+                 HorizontalTextAlignment="Center" 
+                       TextColor="White" FontSize="24"/>
+                </Frame>
+
+                <Entry x:Name="txtNotaEP"
+                   Placeholder="Nota Seguimiento EP"/>
+
+                <Label>Nota Seguimiento EP %</Label>
+                <Entry x:Name="txtNotaEPPrc"
+                   IsReadOnly="True"/>
+
+                <Entry x:Name="txtExamenEP"
+                   Placeholder="Examen EP"/>
+
+                <Label>Examen EP %</Label>
+                <Entry x:Name="txtExamenEPPrc"
+                   IsReadOnly="True"/>
+
+                <Label BackgroundColor="#426B8C">Nota Parcial EP</Label>
+                <Entry x:Name="txtNotaParcialEP"
+                   IsReadOnly="True"/>
+
+                <Entry x:Name="txtNotaEF"
+                   Placeholder="Nota Seguimiento EF"/>
+
+                <Label>Nota Seguimiento EF %</Label>
+                <Entry x:Name="txtNotaEFPrc"
+                   IsReadOnly="True"/>
+
+                <Entry x:Name="txtExamenEF"
+                   Placeholder="Examen EF"/>
+
+                <Label>Examen EF %</Label>
+                <Entry x:Name="txtExamenEFPrc"
+                   IsReadOnly="True"/>
+
+                <Label BackgroundColor="#2AB692">Nota Parcial EF</Label>
+                <Entry x:Name="txtNotaParcialEF"
+                   Placeholder="Nota Parcial EF"
+                   IsReadOnly="True"/>
+
+                <Label BackgroundColor="#F08516">Nota Final</Label>
+                <Entry x:Name="txtNotaF"
+                   IsReadOnly="True"/>
+
+                <Label BackgroundColor="#72F2D1">Estado</Label>
+                <Entry x:Name="txtEstado"
+                   IsReadOnly="True"/>
+
+                <Button x:Name="btnCalcular"
+                    Text="Aplicar Calculo"
+                    Clicked ="btnCalcular_Clicked"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaSem2KCifuentes.MenuPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Sistema de Calificación" 
+             HorizontalTextAlignment="Center" 
+                   TextColor="White" FontSize="24"/>
+            </Frame>
+
+            <Label>Bienvenido!</Label>
+            <Label x:Name="lblUsuario"/>
+            <Label x:Name="lblPassword"/>
+
+            <Button x:Name="btnGrades"
+                    Text="Ingresar Calificaciones"
+                    Clicked ="btnGrades_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
